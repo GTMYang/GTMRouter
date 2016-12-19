@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // 打开界面
+        self.window = UIWindow(frame: UIScreen.main.bounds);
+        self.window?.backgroundColor = UIColor.white
+        self.window!.makeKeyAndVisible();
+        let myNavi: UINavigationController = UINavigationController(rootViewController: ViewController())
+        //        tabNavi.view.backgroundColor = .white
+        self.window!.rootViewController = myNavi
         return true
     }
 

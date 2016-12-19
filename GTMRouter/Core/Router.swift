@@ -34,7 +34,7 @@ public class Router {
                 }
                 
                 // controller
-                let path = url.path
+                let path = url.path.replacingOccurrences(of: "/", with: "")
                 let className = "\(target).\(path)"
                 let cls: AnyClass? = NSClassFromString(className)
                 if let controller = cls as? UIViewController.Type {
@@ -45,7 +45,7 @@ public class Router {
                         viewController = controller.init()
                     }
                     guard let controller = viewController else {
-                        assert(true, "Router ---> 未能创建\(className)的实例")
+                        assert(false, "Router ---> 未能创建\(className)的实例")
                         return
                     }
                     if modal {
@@ -54,13 +54,13 @@ public class Router {
                         Helper.currentTopController.navigationController?.pushViewController(controller, animated: true)
                     }
                 } else {
-                    assert(true, "Router ---> \(className) 必须是UIViewController类型或者其子类型")
+                    assert(false, "Router ---> \(className) 必须是UIViewController类型或者其子类型")
                 }
             } else {
-                assert(true, "Router ---> url.host不能为空，必须为类所在的Target Name")
+                assert(false, "Router ---> url.host不能为空，必须为类所在的Target Name")
             }
         } catch {
-            assert(true, error.localizedDescription)
+            assert(false, error.localizedDescription)
         }
     }
     

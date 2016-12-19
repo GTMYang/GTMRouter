@@ -16,13 +16,39 @@
 		261CF4FD1E07B27400182086 /* String+GTMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4FC1E07B27400182086 /* String+GTMRouter.swift */; };
 		261CF5071E07CDAD00182086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF5061E07CDAD00182086 /* AppDelegate.swift */; };
 		261CF5091E07CDAD00182086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF5081E07CDAD00182086 /* ViewController.swift */; };
-		261CF50C1E07CDAD00182086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261CF50A1E07CDAD00182086 /* Main.storyboard */; };
 		261CF50E1E07CDAD00182086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261CF50D1E07CDAD00182086 /* Assets.xcassets */; };
 		261CF5111E07CDAD00182086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261CF50F1E07CDAD00182086 /* LaunchScreen.storyboard */; };
 		261CF5191E07CEFA00182086 /* GTMRouter.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 261CF5161E07CEFA00182086 /* GTMRouter.podspec */; };
 		261CF51A1E07CEFA00182086 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 261CF5171E07CEFA00182086 /* LICENSE */; };
 		261CF51B1E07CEFA00182086 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 261CF5181E07CEFA00182086 /* README.md */; };
+		261CF51E1E07D4B300182086 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF51C1E07D4B300182086 /* ViewControllerB.swift */; };
+		261CF51F1E07D4B300182086 /* ViewControllerB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261CF51D1E07D4B300182086 /* ViewControllerB.xib */; };
+		261CF5221E07D86000182086 /* GTMRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 261336131E076DE300858C5E /* GTMRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		261CF5231E07D86000182086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2613360A1E076DE300858C5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 261336121E076DE300858C5E;
+			remoteInfo = GTMRouter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		261CF5251E07D86000182086 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				261CF5221E07D86000182086 /* GTMRouter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		261336131E076DE300858C5E /* GTMRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTMRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,13 +63,14 @@
 		261CF5041E07CDAD00182086 /* GTMRouterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTMRouterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261CF5061E07CDAD00182086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261CF5081E07CDAD00182086 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		261CF50B1E07CDAD00182086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		261CF50D1E07CDAD00182086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		261CF5101E07CDAD00182086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		261CF5121E07CDAD00182086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261CF5161E07CEFA00182086 /* GTMRouter.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GTMRouter.podspec; sourceTree = "<group>"; };
 		261CF5171E07CEFA00182086 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		261CF5181E07CEFA00182086 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		261CF51C1E07D4B300182086 /* ViewControllerB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		261CF51D1E07D4B300182086 /* ViewControllerB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +156,11 @@
 			children = (
 				261CF5061E07CDAD00182086 /* AppDelegate.swift */,
 				261CF5081E07CDAD00182086 /* ViewController.swift */,
-				261CF50A1E07CDAD00182086 /* Main.storyboard */,
 				261CF50D1E07CDAD00182086 /* Assets.xcassets */,
 				261CF50F1E07CDAD00182086 /* LaunchScreen.storyboard */,
 				261CF5121E07CDAD00182086 /* Info.plist */,
+				261CF51C1E07D4B300182086 /* ViewControllerB.swift */,
+				261CF51D1E07D4B300182086 /* ViewControllerB.xib */,
 			);
 			path = GTMRouterExample;
 			sourceTree = "<group>";
@@ -176,10 +204,12 @@
 				261CF5001E07CDAD00182086 /* Sources */,
 				261CF5011E07CDAD00182086 /* Frameworks */,
 				261CF5021E07CDAD00182086 /* Resources */,
+				261CF5251E07D86000182086 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				261CF5241E07D86000182086 /* PBXTargetDependency */,
 			);
 			name = GTMRouterExample;
 			productName = GTMRouterExample;
@@ -198,7 +228,7 @@
 				TargetAttributes = {
 					261336121E076DE300858C5E = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = BCGYF9W329;
+						DevelopmentTeam = 2DUPQ924JY;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -242,9 +272,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261CF51F1E07D4B300182086 /* ViewControllerB.xib in Resources */,
 				261CF5111E07CDAD00182086 /* LaunchScreen.storyboard in Resources */,
 				261CF50E1E07CDAD00182086 /* Assets.xcassets in Resources */,
-				261CF50C1E07CDAD00182086 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261CF51E1E07D4B300182086 /* ViewControllerB.swift in Sources */,
 				261CF5091E07CDAD00182086 /* ViewController.swift in Sources */,
 				261CF5071E07CDAD00182086 /* AppDelegate.swift in Sources */,
 			);
@@ -276,15 +307,15 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		261CF50A1E07CDAD00182086 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				261CF50B1E07CDAD00182086 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		261CF5241E07D86000182086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 261336121E076DE300858C5E /* GTMRouter */;
+			targetProxy = 261CF5231E07D86000182086 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		261CF50F1E07CDAD00182086 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -401,7 +432,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = BCGYF9W329;
+				DEVELOPMENT_TEAM = 2DUPQ924JY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -422,7 +453,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = BCGYF9W329;
+				DEVELOPMENT_TEAM = 2DUPQ924JY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -439,6 +470,7 @@
 		261CF5141E07CDAD00182086 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2DUPQ924JY;
 				INFOPLIST_FILE = GTMRouterExample/Info.plist;
@@ -453,6 +485,7 @@
 		261CF5151E07CDAD00182086 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2DUPQ924JY;
 				INFOPLIST_FILE = GTMRouterExample/Info.plist;
