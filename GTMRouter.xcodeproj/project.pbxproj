@@ -8,16 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		261336181E076DE300858C5E /* GTMRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 261336161E076DE300858C5E /* GTMRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		261336211E07750000858C5E /* GTMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261336201E07750000858C5E /* GTMRouter.swift */; };
+		261336241E0776B200858C5E /* GRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261336231E0776B100858C5E /* GRError.swift */; };
+		261CF4F41E077AA800182086 /* GRProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4F31E077AA800182086 /* GRProtocol.swift */; };
+		261CF4F61E07814300182086 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4F51E07814300182086 /* Router.swift */; };
+		261CF4F81E07849100182086 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4F71E07849100182086 /* Helper.swift */; };
+		261CF4FD1E07B27400182086 /* String+GTMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4FC1E07B27400182086 /* String+GTMRouter.swift */; };
+		261CF5071E07CDAD00182086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF5061E07CDAD00182086 /* AppDelegate.swift */; };
+		261CF5091E07CDAD00182086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF5081E07CDAD00182086 /* ViewController.swift */; };
+		261CF50C1E07CDAD00182086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261CF50A1E07CDAD00182086 /* Main.storyboard */; };
+		261CF50E1E07CDAD00182086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261CF50D1E07CDAD00182086 /* Assets.xcassets */; };
+		261CF5111E07CDAD00182086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261CF50F1E07CDAD00182086 /* LaunchScreen.storyboard */; };
+		261CF5191E07CEFA00182086 /* GTMRouter.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 261CF5161E07CEFA00182086 /* GTMRouter.podspec */; };
+		261CF51A1E07CEFA00182086 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 261CF5171E07CEFA00182086 /* LICENSE */; };
+		261CF51B1E07CEFA00182086 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 261CF5181E07CEFA00182086 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		261336131E076DE300858C5E /* GTMRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTMRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		261336161E076DE300858C5E /* GTMRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMRouter.h; sourceTree = "<group>"; };
 		261336171E076DE300858C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		261336201E07750000858C5E /* GTMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTMRouter.swift; sourceTree = "<group>"; };
+		261336231E0776B100858C5E /* GRError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRError.swift; sourceTree = "<group>"; };
+		261CF4F31E077AA800182086 /* GRProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRProtocol.swift; sourceTree = "<group>"; };
+		261CF4F51E07814300182086 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		261CF4F71E07849100182086 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		261CF4FC1E07B27400182086 /* String+GTMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+GTMRouter.swift"; sourceTree = "<group>"; };
+		261CF5041E07CDAD00182086 /* GTMRouterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTMRouterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		261CF5061E07CDAD00182086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		261CF5081E07CDAD00182086 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		261CF50B1E07CDAD00182086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		261CF50D1E07CDAD00182086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		261CF5101E07CDAD00182086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		261CF5121E07CDAD00182086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		261CF5161E07CEFA00182086 /* GTMRouter.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GTMRouter.podspec; sourceTree = "<group>"; };
+		261CF5171E07CEFA00182086 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		261CF5181E07CEFA00182086 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2613360F1E076DE300858C5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261CF5011E07CDAD00182086 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -30,7 +67,11 @@
 		261336091E076DE300858C5E = {
 			isa = PBXGroup;
 			children = (
+				261CF5161E07CEFA00182086 /* GTMRouter.podspec */,
+				261CF5171E07CEFA00182086 /* LICENSE */,
+				261CF5181E07CEFA00182086 /* README.md */,
 				261336151E076DE300858C5E /* GTMRouter */,
+				261CF5051E07CDAD00182086 /* GTMRouterExample */,
 				261336141E076DE300858C5E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				261336131E076DE300858C5E /* GTMRouter.framework */,
+				261CF5041E07CDAD00182086 /* GTMRouterExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +88,53 @@
 		261336151E076DE300858C5E /* GTMRouter */ = {
 			isa = PBXGroup;
 			children = (
+				261336201E07750000858C5E /* GTMRouter.swift */,
+				261336221E07764C00858C5E /* Core */,
+				261CF4FB1E07B25800182086 /* Extensions */,
+				2613361F1E076E2E00858C5E /* Supporting Files */,
+			);
+			path = GTMRouter;
+			sourceTree = "<group>";
+		};
+		2613361F1E076E2E00858C5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				261336161E076DE300858C5E /* GTMRouter.h */,
 				261336171E076DE300858C5E /* Info.plist */,
 			);
-			path = GTMRouter;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		261336221E07764C00858C5E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				261336231E0776B100858C5E /* GRError.swift */,
+				261CF4F31E077AA800182086 /* GRProtocol.swift */,
+				261CF4F51E07814300182086 /* Router.swift */,
+				261CF4F71E07849100182086 /* Helper.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		261CF4FB1E07B25800182086 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				261CF4FC1E07B27400182086 /* String+GTMRouter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		261CF5051E07CDAD00182086 /* GTMRouterExample */ = {
+			isa = PBXGroup;
+			children = (
+				261CF5061E07CDAD00182086 /* AppDelegate.swift */,
+				261CF5081E07CDAD00182086 /* ViewController.swift */,
+				261CF50A1E07CDAD00182086 /* Main.storyboard */,
+				261CF50D1E07CDAD00182086 /* Assets.xcassets */,
+				261CF50F1E07CDAD00182086 /* LaunchScreen.storyboard */,
+				261CF5121E07CDAD00182086 /* Info.plist */,
+			);
+			path = GTMRouterExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +169,40 @@
 			productReference = 261336131E076DE300858C5E /* GTMRouter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		261CF5031E07CDAD00182086 /* GTMRouterExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261CF5131E07CDAD00182086 /* Build configuration list for PBXNativeTarget "GTMRouterExample" */;
+			buildPhases = (
+				261CF5001E07CDAD00182086 /* Sources */,
+				261CF5011E07CDAD00182086 /* Frameworks */,
+				261CF5021E07CDAD00182086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTMRouterExample;
+			productName = GTMRouterExample;
+			productReference = 261CF5041E07CDAD00182086 /* GTMRouterExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		2613360A1E076DE300858C5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = luoyang;
 				TargetAttributes = {
 					261336121E076DE300858C5E = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = BCGYF9W329;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					261CF5031E07CDAD00182086 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = BCGYF9W329;
 						ProvisioningStyle = Automatic;
@@ -106,6 +215,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 261336091E076DE300858C5E;
 			productRefGroup = 261336141E076DE300858C5E /* Products */;
@@ -113,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				261336121E076DE300858C5E /* GTMRouter */,
+				261CF5031E07CDAD00182086 /* GTMRouterExample */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +233,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261CF51A1E07CEFA00182086 /* LICENSE in Resources */,
+				261CF5191E07CEFA00182086 /* GTMRouter.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261CF5021E07CDAD00182086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261CF5111E07CDAD00182086 /* LaunchScreen.storyboard in Resources */,
+				261CF50E1E07CDAD00182086 /* Assets.xcassets in Resources */,
+				261CF50C1E07CDAD00182086 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +255,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261CF4FD1E07B27400182086 /* String+GTMRouter.swift in Sources */,
+				261CF4F61E07814300182086 /* Router.swift in Sources */,
+				261336211E07750000858C5E /* GTMRouter.swift in Sources */,
+				261CF51B1E07CEFA00182086 /* README.md in Sources */,
+				261CF4F81E07849100182086 /* Helper.swift in Sources */,
+				261336241E0776B200858C5E /* GRError.swift in Sources */,
+				261CF4F41E077AA800182086 /* GRProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261CF5001E07CDAD00182086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261CF5091E07CDAD00182086 /* ViewController.swift in Sources */,
+				261CF5071E07CDAD00182086 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		261CF50A1E07CDAD00182086 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261CF50B1E07CDAD00182086 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		261CF50F1E07CDAD00182086 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261CF5101E07CDAD00182086 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		261336191E076DE300858C5E /* Debug */ = {
@@ -240,6 +398,28 @@
 		2613361C1E076DE300858C5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BCGYF9W329;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GTMRouter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luoyang.GTMRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2613361D1E076DE300858C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BCGYF9W329;
@@ -254,23 +434,30 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
-			name = Debug;
+			name = Release;
 		};
-		2613361D1E076DE300858C5E /* Release */ = {
+		261CF5141E07CDAD00182086 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BCGYF9W329;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GTMRouter/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.luoyang.GTMRouter;
+				INFOPLIST_FILE = GTMRouterExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luoyang.GTMRouterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		261CF5151E07CDAD00182086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BCGYF9W329;
+				INFOPLIST_FILE = GTMRouterExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luoyang.GTMRouterExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -292,6 +479,15 @@
 			buildConfigurations = (
 				2613361C1E076DE300858C5E /* Debug */,
 				2613361D1E076DE300858C5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261CF5131E07CDAD00182086 /* Build configuration list for PBXNativeTarget "GTMRouterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261CF5141E07CDAD00182086 /* Debug */,
+				261CF5151E07CDAD00182086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

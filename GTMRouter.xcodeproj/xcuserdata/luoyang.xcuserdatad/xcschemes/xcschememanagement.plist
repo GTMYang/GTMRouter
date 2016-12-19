@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>GTMRouterExample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>261336121E076DE300858C5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>261CF5031E07CDAD00182086</key>
 		<dict>
 			<key>primary</key>
 			<true/>
