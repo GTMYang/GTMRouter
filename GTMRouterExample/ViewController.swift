@@ -20,11 +20,20 @@ class ViewController: UIViewController {
         
         return lab
     }()
-    let nextButton: UIButton = {
+    let nextBButton: UIButton = {
         let btn = UIButton(type: UIButtonType.custom)
-        btn.setTitle("next", for: .normal)
+        btn.setTitle("go to B", for: .normal)
         btn.setTitleColor(UIColor.blue, for: .normal)
-        btn.addTarget(self, action: #selector(onNextTouch), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(onNextBTouch), for: .touchUpInside)
+        
+        return btn
+    }()
+    
+    let nextCButton: UIButton = {
+        let btn = UIButton(type: UIButtonType.custom)
+        btn.setTitle("go to C", for: .normal)
+        btn.setTitleColor(UIColor.blue, for: .normal)
+        btn.addTarget(self, action: #selector(onNextCTouch), for: .touchUpInside)
         
         return btn
     }()
@@ -37,15 +46,21 @@ class ViewController: UIViewController {
         
         self.view.addSubview(self.label)
         self.label.frame = self.view.bounds
-        self.view.addSubview(self.nextButton)
         let h = self.view.bounds.size.height, w = self.view.bounds.size.width
-        self.nextButton.frame = CGRect(x: 0, y: h-100, width: w, height: 50)
+        self.view.addSubview(self.nextBButton)
+        self.nextBButton.frame = CGRect(x: 0, y: h-100, width: w, height: 50)
+        self.view.addSubview(self.nextCButton)
+        self.nextCButton.frame = CGRect(x: 0, y: h-200, width: w, height: 50)
     }
 
     
     // MARK: - Events
-    func onNextTouch() {
+    func onNextBTouch() {
         GTMRouter.push(url: "router://GTMRouterExample/ViewControllerB")
+    }
+    func onNextCTouch() {
+        let params:[String:Any] = ["image": UIImage(named: "logo.png") as Any]
+        GTMRouter.push(url: "router://GTMRouterExample/ViewControllerC?id=1&name=GTMYang&ctitle=bunengzhongwen", parameter: params)
     }
 
 }

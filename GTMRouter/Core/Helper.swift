@@ -23,9 +23,9 @@ class Helper {
             
             for index in 0 ..< queryArray.count {
                 let queryComponent = queryArray[index]
-                let queryComponentPartArray = queryComponent.components(separatedBy: "=") as Array<String>
-                if queryComponentPartArray.count >= 2 {
-                    dic.updateValue(queryComponentPartArray[1], forKey: queryComponentPartArray[0])
+                let compArr = queryComponent.components(separatedBy: "=") as Array<String>
+                if compArr.count >= 2 {
+                    dic.updateValue(compArr[1], forKey: compArr[0])
                 }
             }
         }
@@ -47,6 +47,13 @@ class Helper {
         }
         return dic
     }
+    
+    // stolen from Alamofire
+    static func escape(_ string: String) -> String {
+        let legalURLCharactersToBeEscaped: CFString = ":&=;+!@#$()',*" as CFString
+        return CFURLCreateStringByAddingPercentEscapes(nil, string as CFString!, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
+    }
+
     
     
     /// 当前栈顶视图控制器

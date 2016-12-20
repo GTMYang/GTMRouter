@@ -10,6 +10,9 @@
 		261336181E076DE300858C5E /* GTMRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 261336161E076DE300858C5E /* GTMRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		261336211E07750000858C5E /* GTMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261336201E07750000858C5E /* GTMRouter.swift */; };
 		261336241E0776B200858C5E /* GRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261336231E0776B100858C5E /* GRError.swift */; };
+		26144FE91E08C92400A547CF /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FE71E08C92400A547CF /* ViewControllerC.swift */; };
+		26144FEA1E08C92400A547CF /* ViewControllerC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26144FE81E08C92400A547CF /* ViewControllerC.xib */; };
+		26144FEC1E08D6E000A547CF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 26144FEB1E08D6E000A547CF /* logo.png */; };
 		261CF4F41E077AA800182086 /* GRProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4F31E077AA800182086 /* GRProtocol.swift */; };
 		261CF4F61E07814300182086 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4F51E07814300182086 /* Router.swift */; };
 		261CF4F81E07849100182086 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4F71E07849100182086 /* Helper.swift */; };
@@ -56,6 +59,9 @@
 		261336171E076DE300858C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261336201E07750000858C5E /* GTMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTMRouter.swift; sourceTree = "<group>"; };
 		261336231E0776B100858C5E /* GRError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRError.swift; sourceTree = "<group>"; };
+		26144FE71E08C92400A547CF /* ViewControllerC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
+		26144FE81E08C92400A547CF /* ViewControllerC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerC.xib; sourceTree = "<group>"; };
+		26144FEB1E08D6E000A547CF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		261CF4F31E077AA800182086 /* GRProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRProtocol.swift; sourceTree = "<group>"; };
 		261CF4F51E07814300182086 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		261CF4F71E07849100182086 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 		261336091E076DE300858C5E = {
 			isa = PBXGroup;
 			children = (
+				26144FEB1E08D6E000A547CF /* logo.png */,
 				261CF5161E07CEFA00182086 /* GTMRouter.podspec */,
 				261CF5171E07CEFA00182086 /* LICENSE */,
 				261CF5181E07CEFA00182086 /* README.md */,
@@ -161,6 +168,8 @@
 				261CF5121E07CDAD00182086 /* Info.plist */,
 				261CF51C1E07D4B300182086 /* ViewControllerB.swift */,
 				261CF51D1E07D4B300182086 /* ViewControllerB.xib */,
+				26144FE71E08C92400A547CF /* ViewControllerC.swift */,
+				26144FE81E08C92400A547CF /* ViewControllerC.xib */,
 			);
 			path = GTMRouterExample;
 			sourceTree = "<group>";
@@ -273,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				261CF51F1E07D4B300182086 /* ViewControllerB.xib in Resources */,
+				26144FEC1E08D6E000A547CF /* logo.png in Resources */,
 				261CF5111E07CDAD00182086 /* LaunchScreen.storyboard in Resources */,
+				26144FEA1E08C92400A547CF /* ViewControllerC.xib in Resources */,
 				261CF50E1E07CDAD00182086 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +312,7 @@
 			files = (
 				261CF51E1E07D4B300182086 /* ViewControllerB.swift in Sources */,
 				261CF5091E07CDAD00182086 /* ViewController.swift in Sources */,
+				26144FE91E08C92400A547CF /* ViewControllerC.swift in Sources */,
 				261CF5071E07CDAD00182086 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +537,7 @@
 				261CF5151E07CDAD00182086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
