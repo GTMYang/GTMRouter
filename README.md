@@ -84,33 +84,6 @@ let params:[String:Any] = ["image": UIImage(named: "logo.png") as Any]
 GTMRouter.push(url: "router://GTMRouterExample/ViewControllerC?id=1&name=GTMYang&ctitle=bunengzhongwen", parameter: params)
 ```
 
-约定
-- 视图控制器必须实现GTMRouterParameterInitble协议
-
-GTMRouterParameterInitble
-
-```swift
-//
-//  GRProtocol.swift
-//  GTMRouter
-//
-//  Created by luoyang on 2016/12/19.
-//  Copyright © 2016年 luoyang. All rights reserved.
-//
-
-import Foundation
-
-
-public protocol GTMRouterParameterInitble {
-
-/// 参数初始化器
-/// url中的参数全部默认String类型，其他类型需要在初始化器里自己转换
-/// - Parameter parameters: 参数字典
-init(parameters: [String: Any])
-}
-
-```
-
 
 
 
