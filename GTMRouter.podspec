@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
 
 
   s.source       = { :git => "https://github.com/GTMYang/GTMRouter.git", :tag => s.version }
-  s.source_files = "GTMRouter/*.{h,swift}"
-  s.resources    = 'GTMRouter/Resource/**/*'
+  s.source_files = "GTMRouter/*.swift"
+#s.resources    = 'GTMRouter/Resource/**/*'
 
   s.ios.deployment_target = "8.0"
   s.frameworks = "UIKit"

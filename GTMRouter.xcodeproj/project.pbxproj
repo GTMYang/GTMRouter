@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		261336181E076DE300858C5E /* GTMRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 261336161E076DE300858C5E /* GTMRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		261336211E07750000858C5E /* GTMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261336201E07750000858C5E /* GTMRouter.swift */; };
-		261336241E0776B200858C5E /* GRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261336231E0776B100858C5E /* GRError.swift */; };
 		26144FE91E08C92400A547CF /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FE71E08C92400A547CF /* ViewControllerC.swift */; };
 		26144FEA1E08C92400A547CF /* ViewControllerC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26144FE81E08C92400A547CF /* ViewControllerC.xib */; };
 		26144FEC1E08D6E000A547CF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 26144FEB1E08D6E000A547CF /* logo.png */; };
-		261CF4F41E077AA800182086 /* GRProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4F31E077AA800182086 /* GRProtocol.swift */; };
-		261CF4F61E07814300182086 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4F51E07814300182086 /* Router.swift */; };
-		261CF4F81E07849100182086 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4F71E07849100182086 /* Helper.swift */; };
-		261CF4FD1E07B27400182086 /* String+GTMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF4FC1E07B27400182086 /* String+GTMRouter.swift */; };
+		26144FF41E08F50000A547CF /* GRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FF01E08F50000A547CF /* GRError.swift */; };
+		26144FF51E08F50000A547CF /* GRProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FF11E08F50000A547CF /* GRProtocol.swift */; };
+		26144FF61E08F50000A547CF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FF21E08F50000A547CF /* Helper.swift */; };
+		26144FF71E08F50000A547CF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FF31E08F50000A547CF /* Router.swift */; };
+		26144FF91E08F50700A547CF /* String+GTMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FF81E08F50700A547CF /* String+GTMRouter.swift */; };
 		261CF5071E07CDAD00182086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF5061E07CDAD00182086 /* AppDelegate.swift */; };
 		261CF5091E07CDAD00182086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF5081E07CDAD00182086 /* ViewController.swift */; };
 		261CF50E1E07CDAD00182086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261CF50D1E07CDAD00182086 /* Assets.xcassets */; };
@@ -58,14 +58,14 @@
 		261336161E076DE300858C5E /* GTMRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMRouter.h; sourceTree = "<group>"; };
 		261336171E076DE300858C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261336201E07750000858C5E /* GTMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTMRouter.swift; sourceTree = "<group>"; };
-		261336231E0776B100858C5E /* GRError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRError.swift; sourceTree = "<group>"; };
 		26144FE71E08C92400A547CF /* ViewControllerC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
 		26144FE81E08C92400A547CF /* ViewControllerC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerC.xib; sourceTree = "<group>"; };
 		26144FEB1E08D6E000A547CF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		261CF4F31E077AA800182086 /* GRProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRProtocol.swift; sourceTree = "<group>"; };
-		261CF4F51E07814300182086 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		261CF4F71E07849100182086 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		261CF4FC1E07B27400182086 /* String+GTMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+GTMRouter.swift"; sourceTree = "<group>"; };
+		26144FF01E08F50000A547CF /* GRError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRError.swift; sourceTree = "<group>"; };
+		26144FF11E08F50000A547CF /* GRProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRProtocol.swift; sourceTree = "<group>"; };
+		26144FF21E08F50000A547CF /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		26144FF31E08F50000A547CF /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		26144FF81E08F50700A547CF /* String+GTMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+GTMRouter.swift"; sourceTree = "<group>"; };
 		261CF5041E07CDAD00182086 /* GTMRouterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTMRouterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261CF5061E07CDAD00182086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261CF5081E07CDAD00182086 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				261336201E07750000858C5E /* GTMRouter.swift */,
-				261336221E07764C00858C5E /* Core */,
-				261CF4FB1E07B25800182086 /* Extensions */,
+				26144FEF1E08F4F100A547CF /* Extensions */,
+				26144FEE1E08F4EA00A547CF /* Core */,
 				2613361F1E076E2E00858C5E /* Supporting Files */,
 			);
 			path = GTMRouter;
@@ -139,23 +139,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		261336221E07764C00858C5E /* Core */ = {
+		26144FEE1E08F4EA00A547CF /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				261336231E0776B100858C5E /* GRError.swift */,
-				261CF4F31E077AA800182086 /* GRProtocol.swift */,
-				261CF4F51E07814300182086 /* Router.swift */,
-				261CF4F71E07849100182086 /* Helper.swift */,
+				26144FF01E08F50000A547CF /* GRError.swift */,
+				26144FF11E08F50000A547CF /* GRProtocol.swift */,
+				26144FF21E08F50000A547CF /* Helper.swift */,
+				26144FF31E08F50000A547CF /* Router.swift */,
 			);
-			path = Core;
+			name = Core;
 			sourceTree = "<group>";
 		};
-		261CF4FB1E07B25800182086 /* Extensions */ = {
+		26144FEF1E08F4F100A547CF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				261CF4FC1E07B27400182086 /* String+GTMRouter.swift */,
+				26144FF81E08F50700A547CF /* String+GTMRouter.swift */,
 			);
-			path = Extensions;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		261CF5051E07CDAD00182086 /* GTMRouterExample */ = {
@@ -296,13 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				261CF4FD1E07B27400182086 /* String+GTMRouter.swift in Sources */,
-				261CF4F61E07814300182086 /* Router.swift in Sources */,
 				261336211E07750000858C5E /* GTMRouter.swift in Sources */,
 				261CF51B1E07CEFA00182086 /* README.md in Sources */,
-				261CF4F81E07849100182086 /* Helper.swift in Sources */,
-				261336241E0776B200858C5E /* GRError.swift in Sources */,
-				261CF4F41E077AA800182086 /* GRProtocol.swift in Sources */,
+				26144FF91E08F50700A547CF /* String+GTMRouter.swift in Sources */,
+				26144FF61E08F50000A547CF /* Helper.swift in Sources */,
+				26144FF51E08F50000A547CF /* GRProtocol.swift in Sources */,
+				26144FF71E08F50000A547CF /* Router.swift in Sources */,
+				26144FF41E08F50000A547CF /* GRError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
