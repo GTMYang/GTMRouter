@@ -38,20 +38,24 @@ public class Router {
                 let className = "\(target).\(path)"
                 let cls: AnyClass? = NSClassFromString(className)
                 if let controller = cls as? UIViewController.Type {
-                    var viewController: UIViewController?
-                    if let parameterInitbleController = cls as? GTMRouterParameterInitble.Type {
-                        viewController = parameterInitbleController.init(parameters: params) as? UIViewController
-                    } else {
-                        viewController = controller.init()
-                    }
-                    guard let controller = viewController else {
-                        assert(false, "Router ---> 未能创建\(className)的实例")
-                        return
-                    }
+//                    var viewController: UIViewController = controller.init()
+//
+//                    if let controller:UIViewController.Type = cls as? UIViewController.Type {
+//                        viewController = controller.init(coder: <#T##NSCoder#>)
+//                    } else {
+//                        viewController = controller.init()
+//                    }
+//                    guard let viewController = controller.init() else {
+//                        assert(false, "Router ---> 未能创建\(className)的实例")
+//                        return
+//                    }
+                    let viewController: UIViewController = controller.init()
+                    viewController.initliazeParameters(parameters: params)
+                    
                     if modal {
-                        Helper.currentTopController.present(controller, animated: true, completion: nil)
+                        Helper.currentTopController.present(viewController, animated: true, completion: nil)
                     } else {
-                        Helper.currentTopController.navigationController?.pushViewController(controller, animated: true)
+                        Helper.currentTopController.navigationController?.pushViewController(viewController, animated: true)
                     }
                 } else {
                     assert(false, "Router ---> \(className) 必须是UIViewController类型或者其子类型")

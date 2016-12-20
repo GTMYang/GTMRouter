@@ -38,6 +38,15 @@ class ViewController: UIViewController {
         return btn
     }()
     
+    let nextDButton: UIButton = {
+        let btn = UIButton(type: UIButtonType.custom)
+        btn.setTitle("go to D", for: .normal)
+        btn.setTitleColor(UIColor.blue, for: .normal)
+        btn.addTarget(self, action: #selector(onNextDTouch), for: .touchUpInside)
+        
+        return btn
+    }()
+    
     
 
     override func viewDidLoad() {
@@ -48,9 +57,11 @@ class ViewController: UIViewController {
         self.label.frame = self.view.bounds
         let h = self.view.bounds.size.height, w = self.view.bounds.size.width
         self.view.addSubview(self.nextBButton)
-        self.nextBButton.frame = CGRect(x: 0, y: h-100, width: w, height: 50)
         self.view.addSubview(self.nextCButton)
+        self.view.addSubview(self.nextDButton)
+        self.nextDButton.frame = CGRect(x: 0, y: h-100, width: w, height: 50)
         self.nextCButton.frame = CGRect(x: 0, y: h-200, width: w, height: 50)
+        self.nextBButton.frame = CGRect(x: 0, y: h-300, width: w, height: 50)
     }
 
     
@@ -61,6 +72,9 @@ class ViewController: UIViewController {
     func onNextCTouch() {
         let params:[String:Any] = ["image": UIImage(named: "logo.png") as Any]
         GTMRouter.push(url: "router://GTMRouterExample/ViewControllerC?id=1&name=GTMYang&ctitle=bunengzhongwen", parameter: params)
+    }
+    func onNextDTouch() {
+        GTMRouter.push(url: "router://GTMRouterExample/ViewControllerD")
     }
 
 }

@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GTMRouter"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "swift 实现的上拉刷新，下拉加载动效库"
 
   s.homepage     = "https://github.com/GTMYang/GTMRouter"
@@ -14,10 +14,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/GTMYang/GTMRouter.git", :tag => s.version }
   s.source_files = "GTMRouter/*.swift"
-#s.resources    = 'GTMRouter/Resource/**/*'
 
   s.ios.deployment_target = "8.0"
-  s.frameworks = "UIKit"
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
