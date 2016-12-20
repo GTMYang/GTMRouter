@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GTMRouter"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "swift 实现的上拉刷新，下拉加载动效库"
 
   s.homepage     = "https://github.com/GTMYang/GTMRouter"
