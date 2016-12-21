@@ -40,9 +40,9 @@ class ViewControllerC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        idLabel.text = "id = \(id)"
-        nameLabel.text = "name = \(name)"
-        titleLabel.text = "ctitle = \(ctitle)"
+        idLabel.text = "id = \(id ?? "")"
+        nameLabel.text = "name = \(name ?? "")"
+        titleLabel.text = "ctitle = \(ctitle ?? "")"
         imageV.image = image
     }
 

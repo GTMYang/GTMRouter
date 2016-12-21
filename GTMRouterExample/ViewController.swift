@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }()
     let nextBButton: UIButton = {
         let btn = UIButton(type: UIButtonType.custom)
-        btn.setTitle("go to B", for: .normal)
+        btn.setTitle("ViewControllerB", for: .normal)
         btn.setTitleColor(UIColor.blue, for: .normal)
         btn.addTarget(self, action: #selector(onNextBTouch), for: .touchUpInside)
         
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     let nextCButton: UIButton = {
         let btn = UIButton(type: UIButtonType.custom)
-        btn.setTitle("go to C", for: .normal)
+        btn.setTitle("ViewControllerC", for: .normal)
         btn.setTitleColor(UIColor.blue, for: .normal)
         btn.addTarget(self, action: #selector(onNextCTouch), for: .touchUpInside)
         
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     
     let nextDButton: UIButton = {
         let btn = UIButton(type: UIButtonType.custom)
-        btn.setTitle("go to D", for: .normal)
+        btn.setTitle("ViewControllerD", for: .normal)
         btn.setTitleColor(UIColor.blue, for: .normal)
         btn.addTarget(self, action: #selector(onNextDTouch), for: .touchUpInside)
         
@@ -53,6 +53,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.title = "GTMRouter Demo"
+        
         self.view.addSubview(self.label)
         self.label.frame = self.view.bounds
         let h = self.view.bounds.size.height, w = self.view.bounds.size.width
@@ -60,8 +62,8 @@ class ViewController: UIViewController {
         self.view.addSubview(self.nextCButton)
         self.view.addSubview(self.nextDButton)
         self.nextDButton.frame = CGRect(x: 0, y: h-100, width: w, height: 50)
-        self.nextCButton.frame = CGRect(x: 0, y: h-200, width: w, height: 50)
-        self.nextBButton.frame = CGRect(x: 0, y: h-300, width: w, height: 50)
+        self.nextCButton.frame = CGRect(x: 0, y: h-150, width: w, height: 50)
+        self.nextBButton.frame = CGRect(x: 0, y: h-200, width: w, height: 50)
     }
 
     
@@ -71,7 +73,7 @@ class ViewController: UIViewController {
     }
     func onNextCTouch() {
         let params:[String:Any] = ["image": UIImage(named: "logo.png") as Any]
-        GTMRouter.push(url: "router://GTMRouterExample/ViewControllerC?id=1&name=GTMYang&ctitle=bunengzhongwen", parameter: params)
+        GTMRouter.push(url: "router://GTMRouterExample/ViewControllerC?id=1&name=GTMYang&ctitle=你好", parameter: params)
     }
     func onNextDTouch() {
         GTMRouter.push(url: "router://GTMRouterExample/ViewControllerD")

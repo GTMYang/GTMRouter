@@ -10,35 +10,13 @@ import Foundation
 
 class Helper {
     
-    /// 获取 url 中的 query 字典
-    ///
-    /// - Parameter url: url
-    /// - Returns: query 字典
-    class func getQueryDictionary(url: String) -> [String: Any] {
-        var dic = [String: Any]();
-        // var dic = [:] as Dictionary<String, AnyObject?>?
-        let query = URL.init(string: url)?.query
-        if query != nil {
-            let queryArray = (query?.components(separatedBy: "&"))! as Array<String>
-            
-            for index in 0 ..< queryArray.count {
-                let queryComponent = queryArray[index]
-                let compArr = queryComponent.components(separatedBy: "=") as Array<String>
-                if compArr.count >= 2 {
-                    dic.updateValue(compArr[1], forKey: compArr[0])
-                }
-            }
-        }
-        return dic
-    }
-    
     /// 合并两个字典
     ///
     /// - Parameters:
     ///   - dic0: dic0
     ///   - dic1: dic1
     /// - Returns: 合并后的dic
-    class func mergeDictionary(dic0: [String: Any], dic1: [String: Any]?) -> [String: Any] {
+    class func merge(dic0: [String: Any], dic1: [String: Any]?) -> [String: Any] {
         var dic = dic0
         if dic1 != nil {
             for (key, value) in dic1! {
@@ -47,15 +25,7 @@ class Helper {
         }
         return dic
     }
-    
-    // stolen from Alamofire
-    static func escape(_ string: String) -> String {
-        let legalURLCharactersToBeEscaped: CFString = ":&=;+!@#$()',*" as CFString
-        return CFURLCreateStringByAddingPercentEscapes(nil, string as CFString!, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
-    }
 
-    
-    
     /// 当前栈顶视图控制器
     static var currentTopController: UIViewController {
         get {

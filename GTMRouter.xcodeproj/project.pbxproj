@@ -18,6 +18,7 @@
 		26144FF91E08F50700A547CF /* String+GTMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FF81E08F50700A547CF /* String+GTMRouter.swift */; };
 		261450081E09211E00A547CF /* ViewControllerD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261450071E09211E00A547CF /* ViewControllerD.swift */; };
 		2614500A1E092BBD00A547CF /* UIViewController+GTMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261450091E092BBD00A547CF /* UIViewController+GTMRouter.swift */; };
+		2614500C1E0A0E4300A547CF /* URL+GTMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614500B1E0A0E4300A547CF /* URL+GTMRouter.swift */; };
 		261CF5071E07CDAD00182086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF5061E07CDAD00182086 /* AppDelegate.swift */; };
 		261CF5091E07CDAD00182086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF5081E07CDAD00182086 /* ViewController.swift */; };
 		261CF50E1E07CDAD00182086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261CF50D1E07CDAD00182086 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		26144FF81E08F50700A547CF /* String+GTMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+GTMRouter.swift"; sourceTree = "<group>"; };
 		261450071E09211E00A547CF /* ViewControllerD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerD.swift; sourceTree = "<group>"; };
 		261450091E092BBD00A547CF /* UIViewController+GTMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+GTMRouter.swift"; sourceTree = "<group>"; };
+		2614500B1E0A0E4300A547CF /* URL+GTMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+GTMRouter.swift"; sourceTree = "<group>"; };
 		261CF5041E07CDAD00182086 /* GTMRouterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTMRouterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261CF5061E07CDAD00182086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261CF5081E07CDAD00182086 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,8 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				261336201E07750000858C5E /* GTMRouter.swift */,
-				26144FEF1E08F4F100A547CF /* Extensions */,
 				26144FEE1E08F4EA00A547CF /* Core */,
+				26144FEF1E08F4F100A547CF /* Extensions */,
 				2613361F1E076E2E00858C5E /* Supporting Files */,
 			);
 			path = GTMRouter;
@@ -156,6 +158,7 @@
 			children = (
 				26144FF81E08F50700A547CF /* String+GTMRouter.swift */,
 				261450091E092BBD00A547CF /* UIViewController+GTMRouter.swift */,
+				2614500B1E0A0E4300A547CF /* URL+GTMRouter.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				261CF51B1E07CEFA00182086 /* README.md in Sources */,
 				26144FF91E08F50700A547CF /* String+GTMRouter.swift in Sources */,
 				26144FF61E08F50000A547CF /* Helper.swift in Sources */,
+				2614500C1E0A0E4300A547CF /* URL+GTMRouter.swift in Sources */,
 				26144FF71E08F50000A547CF /* Router.swift in Sources */,
 				26144FF41E08F50000A547CF /* GRError.swift in Sources */,
 			);

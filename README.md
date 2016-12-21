@@ -73,7 +73,7 @@ import GTMRouter
     GTMRouter.pop(url: "router://GTMRouterExample/ViewControllerB")
 ```
 
-## url传参数（目前不支持中文参数，中文参数可以通过下面字典传参数方式传递）
+## url传参数
 ```swift
      GTMRouter.push(url: "router://GTMRouterExample/ViewControllerC?id=1&name=GTMYang&ctitle=bunengzhongwen"）
 ```
