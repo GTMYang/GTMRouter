@@ -26,11 +26,6 @@ public class Router {
     func open(urlString: String, parameter: [String: Any]?, modal: Bool) {
         
         if let url = urlString.asURL(), let target = url.host {
-            // parameter
-            var params = url.queryDtionary
-            if let extParams = parameter {
-                params = Helper.merge(dic0: params, dic1: extParams)
-            }
             
             // controller
             let path = url.path.replacingOccurrences(of: "/", with: "")
@@ -38,7 +33,12 @@ public class Router {
             let cls: AnyClass? = NSClassFromString(className)
             if let controller = cls as? UIViewController.Type {
                 let viewController: UIViewController = controller.init()
-                viewController.initliazeParameters(parameters: params)
+                
+                // parameter
+                viewController.initQueryParameters(parameters: url.queryParameters)
+                if let dicParameters = parameter {
+                    viewController.initliazeDicParameters(parameters: dicParameters)
+                }
                 
                 if modal {
                     Helper.currentTopController.present(viewController, animated: true, completion: nil)

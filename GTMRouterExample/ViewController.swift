@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     }
     func onNextCTouch() {
         let params:[String:Any] = ["image": UIImage(named: "logo.png") as Any]
-        GTMRouter.push(url: "router://GTMRouterExample/ViewControllerC?id=1&name=GTMYang&ctitle=你好", parameter: params)
+        GTMRouter.push(url: "router://GTMRouterExample/ViewControllerC?ip=1&fp=1.2345&dp=12222.2345&bp=true&name=GTMYang,你好", parameter: params)
     }
     func onNextDTouch() {
         GTMRouter.push(url: "router://GTMRouterExample/ViewControllerD")

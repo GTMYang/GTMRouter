@@ -9,22 +9,6 @@
 import Foundation
 
 class Helper {
-    
-    /// 合并两个字典
-    ///
-    /// - Parameters:
-    ///   - dic0: dic0
-    ///   - dic1: dic1
-    /// - Returns: 合并后的dic
-    class func merge(dic0: [String: Any], dic1: [String: Any]?) -> [String: Any] {
-        var dic = dic0
-        if dic1 != nil {
-            for (key, value) in dic1! {
-                dic.updateValue(value, forKey: key)
-            }
-        }
-        return dic
-    }
 
     /// 当前栈顶视图控制器
     static var currentTopController: UIViewController {

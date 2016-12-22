@@ -11,14 +11,18 @@ import GTMRouter
 
 class ViewControllerC: UIViewController {
     
-    var id: String?
+    var ip: Int=0
+    var fp: Float=0
+    var dp: Double=0
+    var bp: Bool=false
     var name: String?
-    var ctitle: String?
     var image: UIImage?
 
-    @IBOutlet weak var idLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var intLabel: UILabel!
+    @IBOutlet weak var flaotLabel: UILabel!
+    @IBOutlet weak var doubleLabel: UILabel!
+    @IBOutlet weak var boolLabel: UILabel!
+    @IBOutlet weak var stringLabel: UILabel!
     @IBOutlet weak var imageV: UIImageView!
     
     /// 参数初始化器
@@ -40,9 +44,11 @@ class ViewControllerC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        idLabel.text = "id = \(id ?? "")"
-        nameLabel.text = "name = \(name ?? "")"
-        titleLabel.text = "ctitle = \(ctitle ?? "")"
+        intLabel.text =     "Int参数：     \(ip)"
+        flaotLabel.text =   "Float参数：   \(fp)"
+        doubleLabel.text =  "Double参数：  \(dp)"
+        boolLabel.text =    "Bool参数：    \(bp)"
+        stringLabel.text =  "String参数：  \(name ?? "")"
         imageV.image = image
     }
 

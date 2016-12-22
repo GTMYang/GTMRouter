@@ -9,6 +9,39 @@
 import Foundation
 
 extension String {
+    
+    var intValue:Int {
+        get {
+            if let val = Int(self) {
+                return val
+            }
+            return 0
+        }
+    }
+    var floatValue:Float {
+        get {
+            if let val = Float(self) {
+                return val
+            }
+            return 0
+        }
+    }
+    var doubleValue:Double {
+        get {
+            if let val = Double(self) {
+                return val
+            }
+            return 0
+        }
+    }
+    var boolValue:Bool {
+        get {
+            if let val = Bool(self) {
+                return val
+            }
+            return false
+        }
+    }
 
     public var escaped: String {
         get {

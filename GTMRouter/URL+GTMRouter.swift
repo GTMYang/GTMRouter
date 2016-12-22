@@ -10,9 +10,9 @@ import Foundation
 
 extension URL {
     
-    var queryDtionary: [String : Any] {
+    var queryParameters: [String : String] {
         get {
-            var dic = [String: Any]();
+            var dic = [String: String]();
             
             guard let queryStr = query else {
                 return [:]
