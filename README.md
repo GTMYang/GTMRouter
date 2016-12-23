@@ -85,7 +85,11 @@ GTMRouter.push(url: "router://GTMRouterExample/ViewControllerC?id=1&name=GTMYang
 ```
 
 
+#缺点与不足
+参数不支持一些类型：Optional<Int>, Optional<Float>, Optional<Double>, Optional<Bool>
+因为是使用的oc的setValue(val, forKey: key)方式来设置属性值的
 
+*如果您有好的改进方式，麻烦赐教*
 
 
 
