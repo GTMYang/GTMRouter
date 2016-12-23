@@ -53,7 +53,7 @@ _**Note:** Make sure that all files in `GTMRouter` included in Compile Sources i
 
 # 版本
 
-## Vesrion 1.1.0
+## Vesrion 1.1.1
 
 This version requires Xcode 8.0 and Swift 3.
 
