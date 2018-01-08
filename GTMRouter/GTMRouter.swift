@@ -14,7 +14,7 @@ import Foundation
 /// - Parameters:
 ///   - url: router://host(TargetName)/path(controller)?param1=v1&param2=v2
 ///   - parameter: url里面不能包含的参数，从这里传
-public func push(url: String, parameter: [String: Any]? = nil) {
+public func push(url: String, parameter: [String: Any]?) {
     Router.shared.push(url: url, parameter: parameter)
 }
 
@@ -24,6 +24,6 @@ public func push(url: String, parameter: [String: Any]? = nil) {
 /// - Parameters:
 ///   - url: router://host(TargetName)/path(controller)?param1=v1&param2=v2
 ///   - parameter:  url里面不能包含的参数，从这里传
-public func pop(url: String, parameter: [String: Any]? = nil) {
+public func modal(url: String, parameter: [String: Any]?) {
     Router.shared.pop(url: url, parameter: parameter)
 }

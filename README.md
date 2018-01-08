@@ -53,7 +53,7 @@ _**Note:** Make sure that all files in `GTMRouter` included in Compile Sources i
 
 # 版本
 
-## Vesrion 1.3.0
+## Vesrion 1.3.1
 
 This version requires Xcode 9.0 and Swift 4.
 
@@ -70,7 +70,7 @@ import GTMRouter
     // push方式
     GTMRouter.push(url: "router://GTMRouterExample/ViewControllerB")
     // 模态窗口方式打开
-    GTMRouter.pop(url: "router://GTMRouterExample/ViewControllerB")
+    GTMRouter.modal(url: "router://GTMRouterExample/ViewControllerB")
 ```
 
 ## url传参数
