@@ -83,7 +83,8 @@ import GTMRouter
 let params:[String:Any] = ["image": UIImage(named: "logo.png") as Any]
 GTMRouter.push(url: "router://GTMRouterExample/ViewControllerC?id=1&name=GTMYang&ctitle=bunengzhongwen", parameter: params)
 ```
-
+## 参数必须用@objc修饰
+因为苹果在Swift 4 中苹果修改了自动添加 @objc 的逻辑：一个继承 NSObject 的 swift 类不再默认给所有函数添加 @objc。只在实现 OC 接口和重写 OC 方法时才自动给函数添加 @objc 标识。
 
 #缺点与不足
 参数不支持一些类型：Optional<Int>, Optional<Float>, Optional<Double>, Optional<Bool>

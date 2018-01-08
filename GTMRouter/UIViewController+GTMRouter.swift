@@ -27,17 +27,17 @@ extension UIViewController {
                 case _ as Float.Type:
                     self.setValue(val.floatValue, forKey: key)
                 case _ as Optional<Float>.Type:
-                    assert(false, "GTMRouter --> 参数不支持Optional<Float>类型，改成Int类型")
+                    assert(false, "GTMRouter --> 参数不支持Optional<Float>类型，改成Float类型")
                     
                 case _ as Double.Type:
                     self.setValue(val.doubleValue, forKey: key)
                 case _ as Optional<Double>.Type:
-                    assert(false, "GTMRouter --> 参数不支持Optional<Double>类型，改成Int类型")
+                    assert(false, "GTMRouter --> 参数不支持Optional<Double>类型，改成Double类型")
                     
                 case _ as Bool.Type:
                     self.setValue(val.boolValue, forKey: key)
                 case _ as Optional<Bool>.Type:
-                    assert(false, "GTMRouter --> 参数不支持Optional<Bool>类型，改成Int类型")
+                    assert(false, "GTMRouter --> 参数不支持Optional<Bool>类型，改成Bool类型")
                     
                 default:
                     break
@@ -56,11 +56,11 @@ extension UIViewController {
                 case _ as Optional<Int>.Type:
                     assert(false, "GTMRouter --> 参数不支持Optional<Int>类型，改成Int类型")
                 case _ as Optional<Float>.Type:
-                    assert(false, "GTMRouter --> 参数不支持Optional<Float>类型，改成Int类型")
+                    assert(false, "GTMRouter --> 参数不支持Optional<Float>类型，改成Float类型")
                 case _ as Optional<Double>.Type:
-                    assert(false, "GTMRouter --> 参数不支持Optional<Double>类型，改成Int类型")
+                    assert(false, "GTMRouter --> 参数不支持Optional<Double>类型，改成Double类型")
                 case _ as Optional<Bool>.Type:
-                    assert(false, "GTMRouter --> 参数不支持Optional<Bool>类型，改成Int类型")
+                    assert(false, "GTMRouter --> 参数不支持Optional<Bool>类型，改成Bool类型")
                 default:
                     break
                 }

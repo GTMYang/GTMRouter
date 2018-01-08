@@ -11,12 +11,12 @@ import GTMRouter
 
 class ViewControllerC: UIViewController {
     
-    var ip: Int=0
-    var fp: Float=0
-    var dp: Double=0
-    var bp: Bool=false
-    var name: String?
-    var image: UIImage?
+    @objc var ip: Int=0
+    @objc var fp: Float=0
+    @objc var dp: Double=0
+    @objc var bp: Bool=false
+    @objc var name: String?
+    @objc var image: UIImage?
 
     @IBOutlet weak var intLabel: UILabel!
     @IBOutlet weak var flaotLabel: UILabel!

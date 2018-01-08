@@ -8,10 +8,10 @@
 
 import Foundation
 
-class Helper {
+public class Helper {
 
     /// 当前栈顶视图控制器
-    static var currentTopController: UIViewController {
+    public static var currentTopController: UIViewController {
         get {
             let rootViewController = UIApplication.shared.keyWindow?.rootViewController
             return Helper.currentTopViewController(rootViewController: rootViewController!)
@@ -39,3 +39,4 @@ class Helper {
         return rootViewController
     }
 }
+
