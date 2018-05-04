@@ -10,6 +10,10 @@ import Foundation
 
 public class Router {
     
+    private init(helper: GRHelper = DefaultHelper()) {
+        self.helper = helper
+    }
+    var helper: GRHelper
     static let shared: Router = {
        return Router()
     }()
@@ -18,7 +22,7 @@ public class Router {
        self.open(urlString: url, parameter: parameter, modal: false)
     }
     
-    func pop(url: String, parameter: [String: Any]?) {
+    func present(url: String, parameter: [String: Any]?) {
         self.open(urlString: url, parameter: parameter, modal: true)
     }
     
@@ -41,9 +45,9 @@ public class Router {
                 }
                 
                 if modal {
-                    Helper.currentTopController.present(viewController, animated: true, completion: nil)
+                    helper.topViewController?.present(viewController, animated: true, completion: nil)
                 } else {
-                    Helper.currentTopController.navigationController?.pushViewController(viewController, animated: true)
+                    helper.navigationController?.pushViewController(viewController, animated: true)
                 }
             } else {
                 assert(false, "Router ---> \(className) 必须是UIViewController类型或者其子类型")

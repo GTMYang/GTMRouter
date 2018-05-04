@@ -14,7 +14,7 @@ import Foundation
 /// - Parameters:
 ///   - url: router://host(TargetName)/path(controller)?param1=v1&param2=v2
 ///   - parameter: url里面不能包含的参数，从这里传
-public func push(url: String, parameter: [String: Any]?) {
+public func push(url: String, parameter: [String: Any]? = nil) {
     Router.shared.push(url: url, parameter: parameter)
 }
 
@@ -24,6 +24,15 @@ public func push(url: String, parameter: [String: Any]?) {
 /// - Parameters:
 ///   - url: router://host(TargetName)/path(controller)?param1=v1&param2=v2
 ///   - parameter:  url里面不能包含的参数，从这里传
-public func modal(url: String, parameter: [String: Any]?) {
-    Router.shared.pop(url: url, parameter: parameter)
+public func present(url: String, parameter: [String: Any]? = nil) {
+    Router.shared.present(url: url, parameter: parameter)
+}
+
+/// 某些特殊情况DefaultHelper不能满足项目的个性化需求
+/// 这是用户可以通过该方法注入自己的查找navigationController和topViewController的帮助类
+///
+/// - Parameters:
+///   - helper: 用来查找navigationController和topViewController的帮助类（不设置的话使用 DefaultHelper）
+public func setHelper(helper: GRHelper) {
+    Router.shared.helper = helper
 }

@@ -1,42 +1,37 @@
 //
-//  Helper.swift
+//  NavProvider.swift
 //  GTMRouter
 //
-//  Created by luoyang on 2016/12/19.
-//  Copyright © 2016年 luoyang. All rights reserved.
+//  Created by 骆扬 on 2018/5/4.
+//  Copyright © 2018年 luoyang. All rights reserved.
 //
 
 import Foundation
 
-public class Helper {
-
-    /// 当前栈顶视图控制器
-    public static var currentTopController: UIViewController {
-        get {
-            let rootViewController = UIApplication.shared.keyWindow?.rootViewController
-            return Helper.currentTopViewController(rootViewController: rootViewController!)
-        }
-    }
+public protocol GRHelper {
     
-    /// 获取视图控制器的栈顶视图控制器
-    ///
-    /// - Parameter rootViewController: 根视图控制器
-    /// - Returns: 栈顶视图控制器
-    static func currentTopViewController(rootViewController: UIViewController) -> UIViewController {
-        if (rootViewController.isKind(of: UITabBarController.self)) {
-            let tabBarController = rootViewController as! UITabBarController
-            return currentTopViewController(rootViewController: tabBarController.selectedViewController!)
-        }
-        
-        if (rootViewController.isKind(of: UINavigationController.self)) {
-            let navigationController = rootViewController as! UINavigationController
-            return currentTopViewController(rootViewController: navigationController.visibleViewController!)
-        }
-        
-        if ((rootViewController.presentedViewController) != nil) {
-            return currentTopViewController(rootViewController: rootViewController.presentedViewController!)
-        }
-        return rootViewController
-    }
+    var navigationController: UINavigationController? {get}
+    var topViewController: UIViewController? {get}
 }
 
+class DefaultHelper: GRHelper {
+    /// 找到topViewController
+    var topViewController: UIViewController? {
+        return navigationController?.topViewController
+    }
+    /// 找到 UINavigationController
+    var navigationController: UINavigationController? {
+        if let rootVC = UIApplication.shared.keyWindow?.rootViewController {
+            if rootVC.isKind(of: UINavigationController.self) {
+                return rootVC as? UINavigationController
+            }
+            if rootVC.isKind(of: UITabBarController.self) {
+                let tabbarVC = rootVC as! UITabBarController
+                if tabbarVC.selectedViewController!.isKind(of: UINavigationController.self) {
+                    return tabbarVC.selectedViewController as? UINavigationController
+                }
+            }
+        }
+        return nil
+    }
+}

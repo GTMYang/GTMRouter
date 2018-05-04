@@ -13,7 +13,6 @@
 		26144FEA1E08C92400A547CF /* ViewControllerC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26144FE81E08C92400A547CF /* ViewControllerC.xib */; };
 		26144FEC1E08D6E000A547CF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 26144FEB1E08D6E000A547CF /* logo.png */; };
 		26144FF41E08F50000A547CF /* GRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FF01E08F50000A547CF /* GRError.swift */; };
-		26144FF61E08F50000A547CF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FF21E08F50000A547CF /* Helper.swift */; };
 		26144FF71E08F50000A547CF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FF31E08F50000A547CF /* Router.swift */; };
 		26144FF91E08F50700A547CF /* String+GTMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26144FF81E08F50700A547CF /* String+GTMRouter.swift */; };
 		261450081E09211E00A547CF /* ViewControllerD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261450071E09211E00A547CF /* ViewControllerD.swift */; };
@@ -29,6 +28,7 @@
 		261CF51E1E07D4B300182086 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF51C1E07D4B300182086 /* ViewControllerB.swift */; };
 		261CF51F1E07D4B300182086 /* ViewControllerB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261CF51D1E07D4B300182086 /* ViewControllerB.xib */; };
 		261CF5221E07D86000182086 /* GTMRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 261336131E076DE300858C5E /* GTMRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2655BD10209C2D7F007046E3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655BD0F209C2D7F007046E3 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 		26144FE81E08C92400A547CF /* ViewControllerC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerC.xib; sourceTree = "<group>"; };
 		26144FEB1E08D6E000A547CF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		26144FF01E08F50000A547CF /* GRError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRError.swift; sourceTree = "<group>"; };
-		26144FF21E08F50000A547CF /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		26144FF31E08F50000A547CF /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		26144FF81E08F50700A547CF /* String+GTMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+GTMRouter.swift"; sourceTree = "<group>"; };
 		261450071E09211E00A547CF /* ViewControllerD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerD.swift; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		261CF5181E07CEFA00182086 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		261CF51C1E07D4B300182086 /* ViewControllerB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
 		261CF51D1E07D4B300182086 /* ViewControllerB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
+		2655BD0F209C2D7F007046E3 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				26144FF01E08F50000A547CF /* GRError.swift */,
-				26144FF21E08F50000A547CF /* Helper.swift */,
 				26144FF31E08F50000A547CF /* Router.swift */,
+				2655BD0F209C2D7F007046E3 /* Helper.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -303,10 +303,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2614500A1E092BBD00A547CF /* UIViewController+GTMRouter.swift in Sources */,
+				2655BD10209C2D7F007046E3 /* Helper.swift in Sources */,
 				261336211E07750000858C5E /* GTMRouter.swift in Sources */,
 				261CF51B1E07CEFA00182086 /* README.md in Sources */,
 				26144FF91E08F50700A547CF /* String+GTMRouter.swift in Sources */,
-				26144FF61E08F50000A547CF /* Helper.swift in Sources */,
 				2614500C1E0A0E4300A547CF /* URL+GTMRouter.swift in Sources */,
 				26144FF71E08F50000A547CF /* Router.swift in Sources */,
 				26144FF41E08F50000A547CF /* GRError.swift in Sources */,

@@ -53,7 +53,7 @@ _**Note:** Make sure that all files in `GTMRouter` included in Compile Sources i
 
 # 版本
 
-## Vesrion 1.3.1
+## Vesrion 1.3.2
 
 This version requires Xcode 9.0 and Swift 4.
 
@@ -67,10 +67,10 @@ import GTMRouter
 
 ## 界面跳转
 ```swift
-    // push方式
+    // push方式打开
     GTMRouter.push(url: "router://GTMRouterExample/ViewControllerB")
-    // 模态窗口方式打开
-    GTMRouter.modal(url: "router://GTMRouterExample/ViewControllerB")
+    // present方式打开
+    GTMRouter.present(url: "router://GTMRouterExample/ViewControllerB")
 ```
 
 ## url传参数
@@ -82,6 +82,21 @@ import GTMRouter
 ```swift
 let params:[String:Any] = ["image": UIImage(named: "logo.png") as Any]
 GTMRouter.push(url: "router://GTMRouterExample/ViewControllerC?id=1&name=GTMYang&ctitle=bunengzhongwen", parameter: params)
+```
+
+## 自定义Helper
+```swift
+///  Helper协议
+public protocol GRHelper {
+    var navigationController: UINavigationController? {get}
+    var topViewController: UIViewController? {get}
+}
+```
+有时候因为项目的个性化默认的Helper满足不了需求，这是可以自定义Helper类实现GRHelper协议
+然后通过
+```swift
+/// 注入自己的Helper类
+GTMRouter.setHelper(yourHelper)
 ```
 ## 参数必须用@objc修饰
 因为苹果在Swift 4 中苹果修改了自动添加 @objc 的逻辑：一个继承 NSObject 的 swift 类不再默认给所有函数添加 @objc。只在实现 OC 接口和重写 OC 方法时才自动给函数添加 @objc 标识。
