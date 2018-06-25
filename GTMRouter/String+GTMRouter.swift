@@ -46,7 +46,7 @@ extension String {
     public var escaped: String {
         get {
             let legalURLCharactersToBeEscaped: CFString = ":&=;+!@#$()',*" as CFString
-            return CFURLCreateStringByAddingPercentEscapes(nil, self as CFString!, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
+            return CFURLCreateStringByAddingPercentEscapes(nil, self as CFString, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
         }
     }
     

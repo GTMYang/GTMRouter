@@ -28,8 +28,17 @@ public func present(url: String, parameter: [String: Any]? = nil) {
     Router.shared.present(url: url, parameter: parameter)
 }
 
+/// 通过urlString获取UIViewController实例
+///
+/// - Parameters:
+///   - url: router://host(TargetName)/path(controller)?param1=v1&param2=v2
+///   - parameter:  url里面不能包含的参数，从这里传
+public func controller(from urlString: String, parameter: [String: Any]? = nil) -> UIViewController? {
+    return Router.shared.controller(from: urlString, parameter: parameter)
+}
+
 /// 某些特殊情况DefaultHelper不能满足项目的个性化需求
-/// 这是用户可以通过该方法注入自己的查找navigationController和topViewController的帮助类
+/// 这时用户可以通过该方法注入自己的查找navigationController和topViewController的帮助类
 ///
 /// - Parameters:
 ///   - helper: 用来查找navigationController和topViewController的帮助类（不设置的话使用 DefaultHelper）

@@ -29,8 +29,17 @@ public class Router {
     // MARK: - Private
     func open(urlString: String, parameter: [String: Any]?, modal: Bool) {
         
+        if let controller = self.controller(from: urlString, parameter: parameter) {
+            if modal {
+                helper.topViewController?.present(controller, animated: true, completion: nil)
+            } else {
+                helper.navigationController?.pushViewController(controller, animated: true)
+            }
+        }
+    }
+    
+    func controller(from urlString: String, parameter: [String: Any]? = nil) -> UIViewController? {
         if let url = urlString.asURL(), let target = url.host {
-            
             // controller
             let path = url.path.replacingOccurrences(of: "/", with: "")
             let className = "\(target).\(path)"
@@ -44,11 +53,7 @@ public class Router {
                     viewController.initliazeDicParameters(parameters: dicParameters)
                 }
                 
-                if modal {
-                    helper.topViewController?.present(viewController, animated: true, completion: nil)
-                } else {
-                    helper.navigationController?.pushViewController(viewController, animated: true)
-                }
+                return viewController
             } else {
                 assert(false, "Router ---> \(className) 必须是UIViewController类型或者其子类型")
             }

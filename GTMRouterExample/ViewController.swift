@@ -64,6 +64,11 @@ class ViewController: UIViewController {
         self.nextDButton.frame = CGRect(x: 0, y: h-100, width: w, height: 50)
         self.nextCButton.frame = CGRect(x: 0, y: h-150, width: w, height: 50)
         self.nextBButton.frame = CGRect(x: 0, y: h-200, width: w, height: 50)
+        
+        let urlString = "router://GTMRouterExample/ViewControllerC?ip=1&fp=1.2345&dp=12222.2345&bp=true&name=GTMYang,你好"
+        let params:[String:Any] = ["image": UIImage(named: "logo.png") as Any]
+        let controller = GTMRouter.controller(from: urlString, parameter: params)
+        
     }
 
     
