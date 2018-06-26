@@ -55,11 +55,12 @@ public class Router {
                 
                 return viewController
             } else {
-                assert(false, "Router ---> \(className) 必须是UIViewController类型或者其子类型")
+                print(false, "Router ---> \(className) 必须是UIViewController类型或者其子类型")
             }
         } else {
-            assert(false, "Router ---> url.host不能为空，必须为类所在的Target Name")
+            print(false, "Router ---> url.host不能为空，必须为类所在的Target Name")
         }
+        return nil
     }
     
 }
