@@ -45,3 +45,11 @@ public func controller(from urlString: String, parameter: [String: Any]? = nil) 
 public func setHelper(helper: GRHelper) {
     Router.shared.helper = helper
 }
+
+/// 如果要支持http的url需要设置WebViewController的工厂类
+///
+/// - Parameters:
+/// - factory: 用来生成Web容器控制器的工厂类（需要实现WebVCFactory协议）
+public func setWebVCFactory(factory: WebVCFactory) {
+    Router.shared.webVCFactory = factory
+}

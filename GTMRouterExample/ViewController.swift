@@ -47,6 +47,15 @@ class ViewController: UIViewController {
         return btn
     }()
     
+    let nextWebButton: UIButton = {
+        let btn = UIButton(type: UIButtonType.custom)
+        btn.setTitle("WebViewController", for: .normal)
+        btn.setTitleColor(UIColor.blue, for: .normal)
+        btn.addTarget(self, action: #selector(onNextWebTouch), for: .touchUpInside)
+        
+        return btn
+    }()
+    
     
 
     override func viewDidLoad() {
@@ -61,14 +70,15 @@ class ViewController: UIViewController {
         self.view.addSubview(self.nextBButton)
         self.view.addSubview(self.nextCButton)
         self.view.addSubview(self.nextDButton)
+        self.view.addSubview(self.nextWebButton)
         self.nextDButton.frame = CGRect(x: 0, y: h-100, width: w, height: 50)
         self.nextCButton.frame = CGRect(x: 0, y: h-150, width: w, height: 50)
         self.nextBButton.frame = CGRect(x: 0, y: h-200, width: w, height: 50)
+        self.nextWebButton.frame = CGRect(x: 0, y: h-250, width: w, height: 50)
         
-        let urlString = "router://GTMRouterExample/ViewControllerC?ip=1&fp=1.2345&dp=12222.2345&bp=true&name=GTMYang,你好"
-        let params:[String:Any] = ["image": UIImage(named: "logo.png") as Any]
-        let controller = GTMRouter.controller(from: urlString, parameter: params)
         
+        // 支持网页
+        GTMRouter.setWebVCFactory(factory: WebViewControllerFactory())
     }
 
     
@@ -82,6 +92,10 @@ class ViewController: UIViewController {
     }
     @objc func onNextDTouch() {
         GTMRouter.push(url: "router://GTMRouterExample/ViewControllerD")
+    }
+    
+    @objc func onNextWebTouch() {
+        GTMRouter.push(url: "https://www.baidu.com")
     }
 
 }

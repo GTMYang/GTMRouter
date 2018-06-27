@@ -53,7 +53,7 @@ _**Note:** Make sure that all files in `GTMRouter` included in Compile Sources i
 
 # 版本
 
-## Vesrion 1.3.2
+## Vesrion 1.3.4
 
 This version requires Xcode 9.0 and Swift 4.
 
@@ -92,13 +92,32 @@ public protocol GRHelper {
     var topViewController: UIViewController? {get}
 }
 ```
+
 有时候因为项目的个性化默认的Helper满足不了需求，这是可以自定义Helper类实现GRHelper协议
 然后通过
 ```swift
 /// 注入自己的Helper类
 GTMRouter.setHelper(yourHelper)
 ```
-## 参数必须用@objc修饰
+## 网页跳转
+```swift
+/// 需要自定义自己的webViewController的工厂类（实现WebVCFactory）
+///  WebVCFactory协议
+public protocol WebVCFactory {
+    func createWebVC(with urlString: String) -> UIViewController
+}
+
+/// 然后调用func setWebVCFactory(factory: WebVCFactory)方法将工厂类注入
+/// 如果要支持http的url需要设置WebViewController的工厂类
+///
+/// - Parameters:
+/// - factory: 用来生成Web容器控制器的工厂类（需要实现WebVCFactory协议）
+public func setWebVCFactory(factory: WebVCFactory) {
+    Router.shared.webVCFactory = factory
+}
+```
+
+## 参数实例变量必须用@objc修饰
 因为苹果在Swift 4 中苹果修改了自动添加 @objc 的逻辑：一个继承 NSObject 的 swift 类不再默认给所有函数添加 @objc。只在实现 OC 接口和重写 OC 方法时才自动给函数添加 @objc 标识。
 
 #缺点与不足

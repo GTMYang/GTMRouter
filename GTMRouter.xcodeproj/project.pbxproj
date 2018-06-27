@@ -28,6 +28,10 @@
 		261CF51E1E07D4B300182086 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF51C1E07D4B300182086 /* ViewControllerB.swift */; };
 		261CF51F1E07D4B300182086 /* ViewControllerB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261CF51D1E07D4B300182086 /* ViewControllerB.xib */; };
 		261CF5221E07D86000182086 /* GTMRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 261336131E076DE300858C5E /* GTMRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2646B6D820E208A900AD93E2 /* WebFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646B6D720E208A900AD93E2 /* WebFactory.swift */; };
+		2646B6DB20E216DC00AD93E2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646B6D920E216DC00AD93E2 /* WebViewController.swift */; };
+		2646B6DC20E216DC00AD93E2 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2646B6DA20E216DC00AD93E2 /* WebViewController.xib */; };
+		2646B6DE20E2195500AD93E2 /* WebViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646B6DD20E2195500AD93E2 /* WebViewControllerFactory.swift */; };
 		2655BD10209C2D7F007046E3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655BD0F209C2D7F007046E3 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +84,10 @@
 		261CF5181E07CEFA00182086 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		261CF51C1E07D4B300182086 /* ViewControllerB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
 		261CF51D1E07D4B300182086 /* ViewControllerB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
+		2646B6D720E208A900AD93E2 /* WebFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebFactory.swift; sourceTree = "<group>"; };
+		2646B6D920E216DC00AD93E2 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		2646B6DA20E216DC00AD93E2 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		2646B6DD20E2195500AD93E2 /* WebViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewControllerFactory.swift; sourceTree = "<group>"; };
 		2655BD0F209C2D7F007046E3 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +157,7 @@
 				26144FF01E08F50000A547CF /* GRError.swift */,
 				26144FF31E08F50000A547CF /* Router.swift */,
 				2655BD0F209C2D7F007046E3 /* Helper.swift */,
+				2646B6D720E208A900AD93E2 /* WebFactory.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -176,6 +185,9 @@
 				26144FE71E08C92400A547CF /* ViewControllerC.swift */,
 				26144FE81E08C92400A547CF /* ViewControllerC.xib */,
 				261450071E09211E00A547CF /* ViewControllerD.swift */,
+				2646B6D920E216DC00AD93E2 /* WebViewController.swift */,
+				2646B6DA20E216DC00AD93E2 /* WebViewController.xib */,
+				2646B6DD20E2195500AD93E2 /* WebViewControllerFactory.swift */,
 			);
 			path = GTMRouterExample;
 			sourceTree = "<group>";
@@ -290,6 +302,7 @@
 				261CF51F1E07D4B300182086 /* ViewControllerB.xib in Resources */,
 				26144FEC1E08D6E000A547CF /* logo.png in Resources */,
 				261CF5111E07CDAD00182086 /* LaunchScreen.storyboard in Resources */,
+				2646B6DC20E216DC00AD93E2 /* WebViewController.xib in Resources */,
 				26144FEA1E08C92400A547CF /* ViewControllerC.xib in Resources */,
 				261CF50E1E07CDAD00182086 /* Assets.xcassets in Resources */,
 			);
@@ -309,6 +322,7 @@
 				26144FF91E08F50700A547CF /* String+GTMRouter.swift in Sources */,
 				2614500C1E0A0E4300A547CF /* URL+GTMRouter.swift in Sources */,
 				26144FF71E08F50000A547CF /* Router.swift in Sources */,
+				2646B6D820E208A900AD93E2 /* WebFactory.swift in Sources */,
 				26144FF41E08F50000A547CF /* GRError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,9 +332,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				261CF51E1E07D4B300182086 /* ViewControllerB.swift in Sources */,
+				2646B6DB20E216DC00AD93E2 /* WebViewController.swift in Sources */,
 				261450081E09211E00A547CF /* ViewControllerD.swift in Sources */,
 				261CF5091E07CDAD00182086 /* ViewController.swift in Sources */,
 				26144FE91E08C92400A547CF /* ViewControllerC.swift in Sources */,
+				2646B6DE20E2195500AD93E2 /* WebViewControllerFactory.swift in Sources */,
 				261CF5071E07CDAD00182086 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
