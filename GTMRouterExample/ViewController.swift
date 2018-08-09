@@ -95,7 +95,7 @@ class ViewController: UIViewController {
     }
     
     @objc func onNextWebTouch() {
-        GTMRouter.push(url: "https://www.baidu.com")
+        GTMRouter.push(url: "https://www.baidu.com", parameter: ["title": "测试网页传参数"])
     }
 
 }

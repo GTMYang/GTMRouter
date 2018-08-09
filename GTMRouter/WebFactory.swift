@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol WebVCFactory {
-    func createWebVC(with urlString: String) -> UIViewController
+    func createWebVC(with urlString: String, parameter: [String: Any]) -> UIViewController
 }

@@ -46,10 +46,7 @@ public class Router {
             if let scheme = url.scheme,
                 (scheme == "http" || scheme == "https") {
                 // Web View Controller
-                let webController: UIViewController? = self.webVCFactory?.createWebVC(with: urlString)
-                if let dicParameters = parameter {
-                    webController?.initliazeDicParameters(parameters: dicParameters)
-                }
+                let webController: UIViewController? = self.webVCFactory?.createWebVC(with: urlString, parameter: parameter ?? [:])
                 return webController
             } else {
                 // controller

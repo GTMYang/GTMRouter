@@ -10,11 +10,12 @@ import UIKit
 import GTMRouter
 
 class WebViewControllerFactory: WebVCFactory {
-    
-    func createWebVC(with urlString: String) -> UIViewController {
+    func createWebVC(with urlString: String, parameter: [String : Any]) -> UIViewController {
         let webVC = WebViewController()
-        webVC.urlString = urlString
+            webVC.urlString = urlString
+        webVC.title = parameter["title"] as? String
         
         return webVC
     }
+    
 }
