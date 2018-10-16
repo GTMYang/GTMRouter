@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         return lab
     }()
     let nextBButton: UIButton = {
-        let btn = UIButton(type: UIButtonType.custom)
+        let btn = UIButton(type: .custom)
         btn.setTitle("ViewControllerB", for: .normal)
         btn.setTitleColor(UIColor.blue, for: .normal)
         btn.addTarget(self, action: #selector(onNextBTouch), for: .touchUpInside)
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }()
     
     let nextCButton: UIButton = {
-        let btn = UIButton(type: UIButtonType.custom)
+        let btn = UIButton(type: .custom)
         btn.setTitle("ViewControllerC", for: .normal)
         btn.setTitleColor(UIColor.blue, for: .normal)
         btn.addTarget(self, action: #selector(onNextCTouch), for: .touchUpInside)
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     }()
     
     let nextDButton: UIButton = {
-        let btn = UIButton(type: UIButtonType.custom)
+        let btn = UIButton(type: .custom)
         btn.setTitle("ViewControllerD", for: .normal)
         btn.setTitleColor(UIColor.blue, for: .normal)
         btn.addTarget(self, action: #selector(onNextDTouch), for: .touchUpInside)
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     }()
     
     let nextWebButton: UIButton = {
-        let btn = UIButton(type: UIButtonType.custom)
+        let btn = UIButton(type: .custom)
         btn.setTitle("WebViewController", for: .normal)
         btn.setTitleColor(UIColor.blue, for: .normal)
         btn.addTarget(self, action: #selector(onNextWebTouch), for: .touchUpInside)

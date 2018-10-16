@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.name         = "GTMRouter"
   s.version      = "1.3.5"
   s.summary      = "swift 实现的上拉刷新，下拉加载动效库"
-  s.swift_version= "4.1.2"
+  s.swift_version= "4.2"
 
   s.homepage     = "https://github.com/GTMYang/GTMRouter"
 
@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+#s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 end
