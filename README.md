@@ -7,7 +7,6 @@
 <a href="https://github.com/GTMYang/GTMRouter"><img src="https://img.shields.io/badge/platform-ios-lightgrey.svg"></a>
 <a href="https://github.com/GTMYang/GTMRouter"><img src="https://img.shields.io/github/license/johnlui/Pitaya.svg?style=flat"></a>
 <a href="https://github.com/GTMYang/GTMRouter"><img src="https://img.shields.io/badge/language-Swift%203-orange.svg"></a>
-<a href="https://travis-ci.org/GTMYang/GTMRouter"><img src="https://img.shields.io/travis/johnlui/Pitaya.svg"></a>
 </p>
 
 <br>
